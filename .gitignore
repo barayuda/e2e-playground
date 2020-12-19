@@ -6,3 +6,4 @@ reports/
 *.sw*
 *.un~
 .DS_Store
+package-lock.json
