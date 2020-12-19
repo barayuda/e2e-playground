@@ -4,11 +4,11 @@
 
 ## Contributors
 
-|[<img src="https://avatars0.githubusercontent.com/u/520463?s=460&u=117ed047bbf81f14f78729daa9498f30a2411a01&v=4?v=4" width="100px;"/><br/><sub><b>barayuda</b></sub>](https://github.com/barayuda)<br/>|
+|[<img src="https://avatars3.githubusercontent.com/u/520463?v=4" width="100px;"/><br/><sub><b>barayuda</b></sub>](https://github.com/barayuda)<br/>|
 | :---: |
 
 
-This project follows the git-contributor [spec](https://github.com/barayuda/git-contributor), auto updated at `Sun Dec 20 2020 23:09:07 GMT+0800`.
+This project follows the git-contributor [spec](https://github.com/barayuda/git-contributor), auto updated at `Sun Dec 20 2020 02:25:54 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->
 
