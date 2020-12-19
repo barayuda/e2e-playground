@@ -1,0 +1,102 @@
+{
+  "name": "e2e-test-playground",
+  "version": "1.0.0",
+  "description": "An e2e testing playground for team-friendly",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barayuda/e2e-test-playground.git"
+  },
+  "keywords": [
+    "e2e",
+    "vue",
+    "sample",
+    "barayuda"
+  ],
+  "author": "Barayuda <gede@barayuda.web.id>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barayuda/e2e-test-playground/issues"
+  },
+  "homepage": "https://github.com/barayuda/e2e-test-playground#readme",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development",
+    "dev:test": "cross-env NODE_ENV=test npm run dev",
+    "lint": "eslint --fix . --ext .vue,.jsx,.js && stylelint --fix assets/**/*.less -s less",
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "serve": "npm run dev:test &",
+    "test": "npm run clean && macaca run --f_options '--opts test/mocha.opts' -d ./test --verbose",
+    "clean": "rm -rf coverage reports",
+    "contributor": "git-contributor"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-proposal-function-sent": "^7.0.0",
+    "@babel/plugin-proposal-json-strings": "^7.0.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-import-meta": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.10.5",
+    "@babel/runtime-corejs2": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-istanbul": "^4.1.5",
+    "classnames": "^2.2.5",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.8",
+    "datahub-proxy-middleware": "4",
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue-libs": "^2.1.0",
+    "git-contributor": "1",
+    "husky": "^1.3.1",
+    "immutable": "^3.8.2",
+    "intl": "^1.2.5",
+    "jsdom": "^11.8.0",
+    "json-loader": "^0.5.2",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "marked": "^0.3.4",
+    "postcss-loader": "^2.0.10",
+    "style-loader": "^0.19.1",
+    "stylelint": "^8.4.0",
+    "ts-loader": "^4.3.1",
+    "tslint": "^5.9.1",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^2.8.1",
+    "unstated": "^2.1.1",
+    "vue": "^2.5.13",
+    "vue-class-component": "^6.2.0",
+    "vue-loader": "^15.2.1",
+    "vue-template-compiler": "^2.5.13",
+    "vuex": "^3.0.1",
+    "webpack": "^4.10.0",
+    "webpack-cli": "^3.0.1",
+    "webpack-dev-server": "^3.1.4",
+    "whatwg-fetch": "^2.0.4",
+    "xutil": "1"
+  },
+  "optionalDependencies": {
+    "macaca-cli": "^2.2.1",
+    "macaca-coverage": "^1.0.7",
+    "macaca-datahub": "^3.0.8",
+    "macaca-electron": "7",
+    "macaca-wd": "3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}

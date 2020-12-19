@@ -1,0 +1,8 @@
+dist/
+coverage/
+screenshots/
+node_modules/
+reports/
+*.sw*
+*.un~
+.DS_Store
